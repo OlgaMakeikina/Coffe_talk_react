@@ -8,7 +8,9 @@ export const data = [
       id: 0,
       image: yan,
       name: "YAN GOLDEN",
-      position: "CO-FOUNDER"
+      position: "CO-FOUNDER",
+      inst: "https://www.instagram.com/",
+      face: "https://www.facebook.com/"
 
   },
 
@@ -16,15 +18,18 @@ export const data = [
       id: 1,
       image: devin,
       name: "DEVIN BREWER",
-      position: "BARISTA"
-
+      position: "BARISTA",
+      inst: "https://www.instagram.com/",
+      face: "https://www.facebook.com/"
   },
 
   {
       id: 2,
       image: anne,
       name: "ANNE MARSH",
-      position: "BARISTA"
+      position: "BARISTA",
+      inst: "https://www.instagram.com/",
+      face: "https://www.facebook.com/"
 
   },
 
@@ -32,7 +37,8 @@ export const data = [
     id: 3,
     image: marie,
     name: "MARIE SCOTT",
-    position: "BARISTA"
-
+    position: "BARISTA",
+    inst: "https://www.instagram.com/",
+    face: "https://www.facebook.com/"
 }
 ]

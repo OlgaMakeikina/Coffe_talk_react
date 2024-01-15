@@ -21,6 +21,7 @@ function Buttons({items, setGoods}) {
     <button className="change" onClick= {() => filteredGoods ("bakery")}>Bakery</button>
     <button className="change" onClick={() => filteredGoods("ice")}>Ice drinks</button>
     <button className="change" onClick ={() => filteredGoods("other")}>Other</button>
+    <button>КОРЗИНА</button>
     </div>   
         )
     }

@@ -1,25 +1,26 @@
 function Footer() {
     return (
-        <div>
-            <div class="foot">
+      <div>
+         <hr className="footer"/>
+            <div className="foot"> 
          <div>
-            <p class="cont">PHONE</p>
-            <p class="text">+(111) 111-11</p>
+            <p className="cont">PHONE</p>
+            <p className="text">+(111) 111-11</p>
          </div>
          <div>
-            <p class="cont">ADRESS</p>
-            <p class="text">123, NEW LENOXCHICAGO</p>
+            <p className="cont">ADRESS</p>
+            <p className="text">6 SOUTHWARK ST, LONDON</p>
          </div>
          <div>
-            <p class="cont">EMAIL</p>
-            <p class="text">INFO@COTALKS.COM</p>
+            <p className="cont">EMAIL</p>
+            <p className="text">INFO@COTALKS.COM</p>
          </div>
          <div>
-            <p class="cont">HOURS</p>
-            <p class="text">8AM - 10PM</p>
+            <p className="cont">HOURS</p>
+            <p className="text">8AM - 10PM</p>
          </div>
       </div>
-        </div>
+      </div>
     )
 }
 

@@ -1,0 +1,173 @@
+.video-carousel {
+    width: 50%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+    
+    border: blue 1px solid;
+  }
+  
+  .video-carousel.hidden {
+    opacity: 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .aboutCoffee {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+   
+    }
+
+  .video-box {
+    flex: 1;
+    border: 2px solid yellow;
+  }
+
+    .info-container {
+    background-color: #A0855B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    }
+
+    .textBoxTwo {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    width: 40%;
+    align-self: center; 
+    text-align: center;
+    }
+
+    .fresh {
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        width: 60%;
+        align-self: center; 
+        text-align: center;
+       margin-bottom: 50px;
+        }
+    
+        .everyMonth {
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-weight: lighter;
+            }
+        
+            hr {
+                width: 30%;
+                color: #ffffff;
+            }
+
+            .interior {
+                width: 50%;
+
+            }
+
+    .slide-btn {
+        color: #A0855B;
+        background-color: transparent;
+        font-size: 50px;
+        opacity: 0.5;
+        font-weight: 100;
+        border: none;
+    }
+
+    .slide-btn:hover {
+        color: #f0f8ff;
+        height: 100%;
+        background-color: transparent;
+        opacity:1;
+        font-size: 65px;
+        cursor: pointer;
+    }
+    
+.btns {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    }
+    .one {
+    color: #A0855B;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+    }
+    .two {
+    color: #38470B;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    }
+    .three {
+    color: #A0855B;
+    font-size: 20px;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    }
+
+    @media (max-width: 576px) {
+      .video-carousel {
+     width: 100%;
+ 
+      }
+    
+     .aboutCoffee {
+    flex-direction: column;
+  
+    }
+
+    .textBoxTwo {
+      font-size: 24px;
+      width: 70%;
+     
+      }
+    .fresh {
+      font-size: 16px;
+      width: 80%;
+    }
+
+    .everyMonth {
+     margin-top: -6px;
+    }
+
+    .interior {
+      width: 100%;
+      
+    }
+
+    .box {
+      margin-top: 30px;
+    }
+.btns {
+  display: none;
+}
+    }

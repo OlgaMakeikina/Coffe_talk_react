@@ -8,7 +8,7 @@ import About from './AboutComponent/About';
 import Home from './Home';
 import Menu from './MenuComponent/Menu';
 import Team from './TeamComponent/Team';
-import Contact from './Contact';
+import Contact from './ContactsComponent/Contact';
 import './App.css';
 import Nav from './Navbar';
 import Footer from './Footer';

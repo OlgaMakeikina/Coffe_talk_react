@@ -11,7 +11,7 @@ const [goods, setGoods] = useState(items);
 
 return (<div>
   <div className="cont">
-    <h2>Our Menu</h2>
+    <h2>OUR MENU</h2>
   </div>
   <Buttons 
   items={items}

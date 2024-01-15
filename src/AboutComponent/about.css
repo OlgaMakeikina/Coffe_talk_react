@@ -4,10 +4,12 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .btn_tabs {
-background-color: #FF9843;;
+background-color: #FF9843;
 padding: 10px;
 font-size: 20px;
 font-family: 'Inter', sans-serif;
@@ -42,36 +44,7 @@ border: none;
     font-family: 'Inter', sans-serif;
     }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    }
-    .one {
-    color: #A0855B;
-    font-size: 32px;
-    font-weight: bolder;
-    margin: 0;
-    margin-top: 50px;
-    font-family: 'Inter', sans-serif;
-    }
-    .two {
-    color: #38470B;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    }
-    .three {
-    color: #A0855B;
-    font-size: 20px;
-    width: 300px;
-    font-family: 'Inter', sans-serif;
-    }
+
     .sale {
     display: flex;
     background-color: #F1D6AB;
@@ -101,44 +74,4 @@ border: none;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     }
-    .aboutCoffee {
-    display: flex;
-    margin-top: 100px;
-    flex-wrap: wrap;
-    }
-    .boxTwo {
-    background-color: #A0855B;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    }
-    .handAndCup {
-        width: 50%;
-       }
-
-    .textBoxTwo {
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    width: 40%;
-    align-self: center; 
-    margin: 0;
-    }
-    .everyMonth {
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 50px;
-    font-weight: lighter;
-    }
-    .fresh {
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    width: 60%;
-    align-self: center; 
-    }
+   

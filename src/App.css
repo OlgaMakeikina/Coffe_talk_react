@@ -34,7 +34,13 @@
             display: flex;
             margin-right: auto;
             }
-
+.footer {
+  width: 80%; 
+  margin-top: 100px;
+  background-color: #38470B;
+  height: 3px;
+  border: none;
+}
             .foot {
               color: #38470B;
               display: flex;
@@ -44,7 +50,6 @@
               padding-bottom: 20px;
               text-align: center;
               font-family: 'Inter', sans-serif;
-              margin-top: 100px;
               flex-wrap: wrap;
               }
               .cont {
@@ -56,6 +61,7 @@
               font-size: 14px;
               font-weight: bold;
               font-family: 'Inter', sans-serif;
+              cursor: pointer;
               }
               
 .header-menu-btn {
@@ -69,16 +75,17 @@
                   display: flex;
                   flex-direction: column;
                   top: 0;
-                  left: -280px;
-                  width: 240px;
+                  left: -290px;
+                  width: 250px;
                   height: 100%;
-                  background-color: rgb(160, 133, 91, 0.8);
+                  background-color: #F9F6F2;;
                   border: 1px solid #38470B;
                   border-top-right-radius: 16px;
                   border-bottom-right-radius: 16px;
                   transition: transform 0.3 linear;
                   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
                   justify-content: flex-start;
+                  z-index: 100;
                 }
 
                 .header-nav.active {
@@ -88,7 +95,7 @@
                 .link {
                 margin-left: 50px;
                 margin-top: 30px;
-                color: #F9F6F2;
+                color: #38470B;
                 }
 
                 .header-menu-btn {
@@ -96,13 +103,13 @@
                   margin-left: auto;
                   width: 40px;
                   height: 40px;
+                  font-size: 40px;
                   border: none;
                   background-color: transparent;
                   color: #38470B;
                 }
-.icon-nav {
-  width: 40px;
-}
+
                   }
 
+                  
 
