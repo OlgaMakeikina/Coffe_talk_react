@@ -1,7 +1,7 @@
 const ModalContent = ({setIsOpen}) => {
     return (<div className="modal_content">
-<p>YOUR CART</p>
-<button onClick = { () => setIsOpen(false)}>Close cart</button>
+<h2>Shopping Cart</h2>
+<button className="close-cart-btn" onClick = { () => setIsOpen(false)}>Close cart</button>
     </div>)
 }
 export default ModalContent;

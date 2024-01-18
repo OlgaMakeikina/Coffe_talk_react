@@ -67,6 +67,10 @@ label {
     flex-wrap: wrap;
 }
 
+.map {
+    z-index: 1;
+}
+
 @media (max-width: 576px) {
 
 #email {
@@ -81,4 +85,7 @@ label {
 label {
     font-size: 20px;
 }
+
+
+
 }

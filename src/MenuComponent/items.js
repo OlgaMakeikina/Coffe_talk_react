@@ -18,7 +18,7 @@ export const items = [
     id: 1,
     name: "Espresso",
     searchTerm: ["coffee", "popular"],
-    price: 3,
+    price: 3.00,
     image: espresso
 },
 
@@ -26,7 +26,7 @@ export const items = [
     id: 2,
     name: "Cappuccino",
     searchTerm: ["coffee", "popular"],
-    price: 4,
+    price: 4.00,
     image: cappuccino
 },
 
@@ -34,7 +34,7 @@ export const items = [
 id: 3,
 name: "Latte",
 searchTerm: ["coffee", "popular"],
-price: 5,
+price: 5.00,
 image: latte
 },
 
@@ -42,7 +42,7 @@ image: latte
     id: 4,
     name: "Frappe",
     searchTerm: ["coffee"],
-    price: 5,
+    price: 5.00,
     image: frappe
     },
 
@@ -50,7 +50,7 @@ image: latte
         id: 5,
         name: "Ice Coffe",
         searchTerm: ["coffee", "ice"],
-        price: 5.5,
+        price: 5.50,
         image: iceCoffe
         },
 
@@ -58,7 +58,7 @@ image: latte
     id: 6,
     name: "Pumpkin Coffee",
     searchTerm: ["coffee", "season"],
-    price: 7,
+    price: 7.00,
     image: pumpkin
     },
 
@@ -66,7 +66,7 @@ image: latte
         id: 7,
         name: "Cupcake",
         searchTerm: ["bakery"],
-        price: 4.5,
+        price: 4.50,
         image: cupcake
         },
 
@@ -74,7 +74,7 @@ image: latte
             id: 8,
             name: "Cinnamon Bun",
             searchTerm: ["bakery", "popular"],
-            price: 5,
+            price: 5.00,
             image: cinnamon
             },
 
@@ -82,7 +82,7 @@ image: latte
                 id: 9,
                 name: "Apple Pie",
                 searchTerm: ["bakery", "season"],
-                price: 6.5,
+                price: 6.50,
                 image: applePie
                 },
 
@@ -90,7 +90,7 @@ image: latte
                 id: 10,
                 name: "Croissant",
                 searchTerm: ["bakery", "popular"],
-                price: 3.5,
+                price: 3.50,
                 image: croissant
                 },
 
@@ -98,7 +98,7 @@ image: latte
                 id: 11,
                 name: "Herbal Tea",
                 searchTerm: ["other"],
-                price: 2.5,
+                price: 2.50,
                 image: herbalTea
                 },
 
@@ -106,7 +106,7 @@ image: latte
                     id: 12,
                     name: "Black Tea",
                     searchTerm: ["other"],
-                    price: 2.5,
+                    price: 2.50,
                     image: blackTea
                     },
 
@@ -114,7 +114,7 @@ image: latte
                         id: 13,
                         name: "Orange Fresh",
                         searchTerm: ["other", "ice"],
-                        price: 2.0,
+                        price: 2.00,
                         image: juice
                         },
 
@@ -122,7 +122,7 @@ image: latte
                             id: 14,
                             name: "Arabica Beans 200g",
                             searchTerm: ["beans"],
-                            price: 4.0,
+                            price: 4.00,
                             image: beans
                             },
 ]

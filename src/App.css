@@ -21,7 +21,7 @@
           }
           
           .link {
-  margin-top: 15px;
+    margin-top: 15px;
     text-decoration: none;
     color: #38470B;
     font-size: 24px;
@@ -34,6 +34,12 @@
             display: flex;
             margin-right: auto;
             }
+  
+h2 {
+  font-family: 'Inter', sans-serif;
+  color: #38470B;
+}
+
 .footer {
   width: 80%; 
   margin-top: 100px;
@@ -68,6 +74,36 @@
   display: none;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: -60px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: right 0.6s ease-in-out; 
+  border: 1px red solid;
+}
+
+.cart-button {
+  position: fixed;
+  bottom: 65px;
+  right: -60px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: right 0.6s ease-in-out; 
+  border: 1px red solid;
+}
+
+.scroll-to-top.visible,
+.cart-button.visible {
+  right: 20px; /* Появление справа */
+}
+
+.scroll-to-top.hidden,
+.cart-button.hidden {
+  right: -60px; /* Скрытие за пределы экрана */
+}
+
   
               @media (max-width: 576px) {
                 .header-nav {
@@ -82,7 +118,7 @@
                   border: 1px solid #38470B;
                   border-top-right-radius: 16px;
                   border-bottom-right-radius: 16px;
-                  transition: transform 0.3 linear;
+                  transition: transform 0.7s ease;
                   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
                   justify-content: flex-start;
                   z-index: 100;
@@ -90,6 +126,23 @@
 
                 .header-nav.active {
                   transform: translateX(100%);
+                }
+
+                .overlay-body {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0);
+                  z-index: 99;
+                  opacity: 0;
+                  transition: opacity 0.7s ease;
+                }
+                
+                .overlay-body.visible {
+                  background-color: rgba(0, 0, 0, 0.5);
+                  opacity: 1;
                 }
 
                 .link {

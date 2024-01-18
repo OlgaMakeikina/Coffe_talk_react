@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useMediaQuery } from 'react-responsive';
+import './contact.css'
 
 const ObjectMap = () => {
   const objectPosition = [51.505, -0.09]; 
@@ -9,6 +10,7 @@ const ObjectMap = () => {
 
   return (
     <MapContainer
+      className='map'
       center={objectPosition}
       zoom={17}
       style={{ width: isMobile ? '90%' : '50%', height: isMobile ? '300px' : '400px' }}
