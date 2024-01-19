@@ -59,7 +59,7 @@ function Goods({ goods }) {
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
-              {item.name} - Quantity: {item.quantity}
+              {item.name} - Quantity  : {item.quantity}
             </li>
           ))}
         </ul>
