@@ -4,12 +4,13 @@ import Buttons from './Buttons';
 import { items } from './items';
 import './menu.css';
 
-function Shop() { 
+
+function Menu() { 
 const [goods, setGoods] = useState(items);
 
+return (
 
-
-return (<div>
+<div>
   <div className="cont">
     <h2>OUR MENU</h2>
   </div>
@@ -19,7 +20,8 @@ return (<div>
   /> 
 <Goods goods={goods}/>
 </div>
+
 )
  }
 
-export default Shop;
+export default Menu;

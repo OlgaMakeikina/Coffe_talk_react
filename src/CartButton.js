@@ -25,12 +25,13 @@ const CartButton = () => {
   }, []);
 
   return (
-    <div
+    <button
       className={`cart-button ${isVisible ? 'visible' : 'hidden'}`}
       onClick={handleCartClick}
     >
+      <p>количество</p>
       <img src={cart} alt="cart" width="30px" />
-    </div>
+    </button>
   );
 };
 

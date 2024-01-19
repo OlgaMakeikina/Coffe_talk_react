@@ -3,6 +3,7 @@ import Modal from './Modal/Modal';
 import { useState } from "react";
 import cart from './MenuContent/cart.png';
 
+
 function Buttons({items, setGoods, totalItems}) {
     const [isOpen, setIsOpen] = useState(false);
 

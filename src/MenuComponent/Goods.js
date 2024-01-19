@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import './menu.css';
 import Swal from 'sweetalert2';
 
-
 function Goods({ goods }) {
   const [cart, setCart] = useState([]);
   const [totalItems, setTotalItems] = useState(0);
@@ -34,7 +33,6 @@ function Goods({ goods }) {
           }
         });
       }
-    
     };
 
   const reduceItem = (id) => {

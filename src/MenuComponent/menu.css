@@ -169,9 +169,9 @@ sup {
 }
 
 .modal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+   position: fixed;
+   top: 0;
+   bottom: 0;
   right: 0;
   left: 0;
   z-index: 1000;
@@ -191,9 +191,13 @@ sup {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('MenuContent/coffee_beans.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #F9F6F2;
   font-size: 20px;
-  width: 100%;
+  width: 80%;
   height: 50%;
   }
 

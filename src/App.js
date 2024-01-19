@@ -15,12 +15,10 @@ import Gallery from './GalleryComponent/Gallery';
 import ScrollToTopButton from './Scroll'
 import CartButton from './CartButton';
 
-
 function App() {
   return (
-    <div>
+     <div> 
 <Router>
-  
   <Nav/> 
   <Routes>
   <Route path="/" element={<Home/>} />
@@ -32,8 +30,8 @@ function App() {
     </Router>
 <Footer/>
 <ScrollToTopButton />
-<CartButton />
-    </div>
+<CartButton />  
+ </div>
   )
   
   
