@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
       className={`scroll-to-top ${isVisible ? 'visible' : 'hidden'}`}
       onClick={scrollToTop}
     >
-      <img src={scroll} width="30px" alt="scroll"/>
+      <img src={scroll} width="40px" alt="scroll"/>
     </div>
   );
 };
