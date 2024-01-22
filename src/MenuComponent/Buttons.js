@@ -20,7 +20,7 @@ function Buttons({items, setGoods, totalItems}) {
     
         return (<div className="cont">
     <button className="change" onClick = {() => setGoods(items)}>All</button> 
-    <button className="change" onClick={() => filteredGoods("season")}>Seasonal <sup>NEW!!!</sup></button>
+    <button className="change" onClick={() => filteredGoods("season")}>Seasonal</button>
     <button className="change" onClick = {() => filteredGoods("popular")}>Popular</button>
     <button className="change" onClick = {() => filteredGoods("coffee")}>Coffee</button>
     <button className="change" onClick= {() => filteredGoods ("bakery")}>Bakery</button>

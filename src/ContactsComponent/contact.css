@@ -4,88 +4,73 @@ form {
     align-items: center;
     margin-top: 50px;
     }
-
     #email {
-        padding: 10px;
-        font-size: 14px;
-        font-family: 'Inter', sans-serif;
-        margin: 5px;
-        border: #38470B solid 1px;
-        width: 500px;
-        }
-
-        #message {
-            padding: 10px;
-            font-size: 14px;
-            font-family: 'Inter', sans-serif;
-            margin: 5px;
-            border: #38470B solid 1px;
-            width: 500px;
-            height: 250px;
-            }
-
-            
-#submit {
-background-color: #38470B;
-color: #ffffff;
-margin: 20px;
-padding: 10px;
-width: 200px;
-border: none;
-font-size: 24px;
-font-weight: 100;
-font-style: italic;
-font-family: 'Inter', sans-serif;
-text-decoration: none;
-}
-
-label {
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin: 5px;
+    border: #38470B solid 1px;
+    width: 500px;
+    }
+    #message {
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin: 5px;
+    border: #38470B solid 1px;
+    width: 500px;
+    height: 250px;
+    }
+    #submit {
+    background-color: #38470B;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    }
+    label {
     color: #38470B;
     font-size: 30px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
-}
-
-.thanks {
+    }
+    .thanks {
     color: #38470B;
     font-size: 30px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
-}
-
-.thanks-cont {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.contacts-footer {
+    }
+    .thanks-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .contacts-footer {
     display: flex;
     justify-content: space-around;
     background-color: #A0855B;
     padding: 20px;
     flex-wrap: wrap;
-}
-
-.map {
+    }
+    .map {
     z-index: 1;
-}
-
-@media (max-width: 576px) {
-
-#email {
+    }
+    
+    @media all and (max-width: 576px) {
+    #email {
     width: 300px;
-}
-
-#message {
+    }
+    #message {
     width: 300px;
     height: 200px;
-}
-
-label {
+    }
+    label {
     font-size: 20px;
-}
-
-
-
-}
+    }
+    }
