@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import './menu.css';
-import Swal from 'sweetalert2';
+import SweetAlert from "./SweetAlert";
+import ShoppingCart from "./ShoppingCart";
+import ProductCard from "./ProductCard";
 
 function Goods({ goods }) {
   const [cart, setCart] = useState([]);
   const [totalItems, setTotalItems] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [showAlert, setShowAlert] = useState(false);
+  const [selectedProductForAlert, setSelectedProductForAlert] = useState(null);
 
   useEffect(() => {
     const items = cart.reduce((acc, item) => acc + item.quantity, 0);
@@ -14,19 +18,6 @@ function Goods({ goods }) {
     setTotalPrice(price);
   }, [cart]);
 
-  const showAlert = (title) => {
-    Swal.fire({
-      title,
-      confirmButtonText: 'OK',
-      confirmButtonColor: '#38470B',
-      background: '#F9F6F2',
-      customClass: {
-        confirmButton: 'custom-button',
-        title: 'custom-title'
-      }
-    });
-  };
-
   const putInCart = (id) => {
     const selectedProduct = goods.find((product) => product.id === id);
     const isInCart = cart.some((item) => item.id === id);
@@ -34,7 +25,8 @@ function Goods({ goods }) {
     if (!isInCart) {
       setCart([...cart, { ...selectedProduct, quantity: 1 }]);
     } else {
-      showAlert(`${selectedProduct.name} is already in the cart`);
+      setShowAlert(true);
+      setSelectedProductForAlert(selectedProduct);
     }
   };
 
@@ -53,44 +45,23 @@ function Goods({ goods }) {
   };
 
   return (
-    <div>
-      <div className="cart">
-        <h2>Shopping Cart</h2>
-        <ul>
-          {cart.map((item) => (
-            <li key={item.id}>
-              {item.name} - Quantity  : {item.quantity}
-            </li>
-          ))}
-        </ul>
-        <p>Total Items: {totalItems}</p>
-        <p>Total Price: $ {totalPrice}</p>
-      </div>
-
-      <div className="products">
-        {goods.map((element) => {
-          const { id, name, price, image } = element;
-          return (
-            <div key={id} className="product-card">
-              <img className="product-img" src={image} alt="products" />
-              <div className="overlay-btn">
-                <button className="btn" onClick={() => putInCart(id)}>
-                  Add to cart
-                </button>
-                <button className="view-btn">View cart</button>
+              <div>
+                {showAlert && <SweetAlert selectedProduct={selectedProductForAlert} setShowAlert={setShowAlert} />}
+                <ShoppingCart cart={cart} totalItems={totalItems} totalPrice={totalPrice} />
+          
+                <div className="products">
+                  {goods.map((element) => (
+                    <ProductCard
+                      key={element.id}
+                      {...element}
+                      putInCart={putInCart}
+                      reduceItem={reduceItem}
+                      addMore={addMore}
+                    />
+                  ))}
+                </div>
               </div>
-              <div className="product-info">
-                <h3>{name}</h3>
-                <h4>$ {price.toFixed(2)}</h4>
-                <button onClick={() => reduceItem(id)}>&laquo;</button>
-                <button onClick={() => addMore(id)}>&raquo;</button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+            );
+          }
 
 export default Goods;

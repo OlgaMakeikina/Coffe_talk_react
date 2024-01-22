@@ -3,7 +3,6 @@ import Modal from './Modal/Modal';
 import { useState } from "react";
 import cart from './MenuContent/cart.png';
 
-
 function Buttons({items, setGoods, totalItems}) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -30,9 +29,9 @@ function Buttons({items, setGoods, totalItems}) {
     <div>
     <button className="cart-btn" onClick = { () => setIsOpen(true)}>
     <div className="cart-cont">
-        <p className="quantity">{totalItems}</p>
-        <img className="cart-image" src={cart} alt="cart" width="30px" />
-      </div>
+    <img className="cart-image" src={cart} alt="cart" width="30px" />
+    {totalItems > 0 && <span className="quantity">{totalItems}</span>}
+  </div>
         
         </button>
       {
