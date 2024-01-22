@@ -34,11 +34,11 @@ export const data = [
   },
 
   {
-    id: 3,
-    image: marie,
-    name: "MARIE SCOTT",
-    position: "BARISTA",
-    inst: "https://www.instagram.com/",
-    face: "https://www.facebook.com/"
-}
+      id: 3,
+      image: marie,
+      name: "MARIE SCOTT",
+      position: "BARISTA",
+      inst: "https://www.instagram.com/",
+      face: "https://www.facebook.com/"
+  }
 ]

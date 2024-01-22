@@ -151,7 +151,7 @@
 
   
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     .popup__prev {
       left: 0;
       top: 15%;
