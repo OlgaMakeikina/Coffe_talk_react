@@ -29,10 +29,8 @@ function Gallery() {
   }
 
   return (
-    <>
-
-
-      <GalleryContent
+   <div>
+    <GalleryContent
         onCardClick={handleCardClick}
       >
       </GalleryContent>
@@ -44,8 +42,7 @@ function Gallery() {
         nextCard={handleNextCard}
       >
       </Popup>
-
-    </>
+   </div>
   );
 }
 

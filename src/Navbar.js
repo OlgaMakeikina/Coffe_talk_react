@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
-import { createPortal } from "react-dom";
 import logo from './Content/logo.png';
 import { useState } from "react";
 import './App.css';
-
-function Overlay({ isOpen, onClose }) {
-  return createPortal(
-    <div className={`overlay-body ${isOpen ? "visible" : ""}`} onClick={onClose}></div>,
-    document.body
-  );
-}
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +17,7 @@ function Nav() {
 
   return (
     <div>
-      <Overlay isOpen={isOpen} onClose={toggleMenu} />
-      <nav className={`header-nav ${isOpen ? "active" : ""}`}>
+      <nav className={`header-nav ${isOpen ? 'active' : ''}`}>
         <div className="logo">
           <img className='logotype' src={logo} width="100px" alt="logo"/>
           <p className="name">
