@@ -17,7 +17,7 @@ function HomeItem() {
         return slide
       }))
       setHidden(false);
-    }, 1000); // Задержка в 1 c
+    }, 1000); 
   };
 
   const nextVideo = () => {
