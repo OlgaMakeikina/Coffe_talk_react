@@ -10,12 +10,7 @@ body {
 .home-header {
   font-style: italic;
 }
-  .header {
-    color: #38470B;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    padding: 10px;
-    }
+ 
   .name {
   color: rgba(145, 91, 74, 1);
   font-size: 30px;

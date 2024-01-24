@@ -1,5 +1,5 @@
-import ModalContent from "./Modal/ModalContent";
-import Modal from './Modal/Modal';
+import ModalContent from "./ModalContent";
+import Modal from './Modal';
 import { useState } from "react";
 import cart from './MenuContent/cart.png';
 

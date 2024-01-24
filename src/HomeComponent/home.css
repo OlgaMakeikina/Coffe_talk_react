@@ -4,17 +4,15 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-
-.home-header {
+  }
+  .home-header {
   position: absolute;
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-
-.video-carousel {
+  }
+  .video-carousel {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -22,11 +20,10 @@ h1 {
   opacity: 1;
   z-index: -1;
   }
-.video-carousel.hidden {
+  .video-carousel.hidden {
   opacity: 0;
-}
-
-.btns {
+  }
+  .btns {
   position: absolute;
   top: 65%;
   width: 100%;
@@ -34,8 +31,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-}
-.slide-btn {
+  }
+  .slide-btn {
   background-color: transparent;
   color: #ffffff;
   border: none;
@@ -44,160 +41,48 @@ h1 {
   opacity: 0.7;
   cursor: pointer;
   height: 100%;
-}
-.slide-btn:hover {
+  }
+  .slide-btn:hover {
   color: #f0f8ff;   
   opacity:1;
   font-size: 65px;
-}
-
-  .aboutCoffee {
-    display: flex;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    }
-
-    .info-container {
-    background-color: #A0855B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    z-index: -100;
-    }
-
-    .textBoxTwo {
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    width: 40%;
-    align-self: center; 
-    text-align: center;
-    }
-
-    .fresh {
-        color: #fff;
-        font-family: 'Inter', sans-serif;
-        font-size: 18px;
-        width: 60%;
-        align-self: center; 
-        text-align: center;
-       margin-bottom: 50px;
-        }
-    
-        .everyMonth {
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-style: italic;
-            margin-bottom: 20px;
-            font-weight: lighter;
-            }
-        
-            hr {
-                width: 30%;
-                color: #ffffff;
-            }
-
-            .interior {
-                width: 50%;
-            }
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
-    }
-    .one {
-    color: #A0855B;
-    font-size: 32px;
-    font-weight: bolder;
-    margin: 0;
-    margin-top: 50px;
-    font-family: 'Inter', sans-serif;
-    }
-    .two {
-    color: #38470B;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    }
-    .three {
-    color: #A0855B;
-    font-size: 20px;
-    width: 300px;
-    font-family: 'Inter', sans-serif;
-    }
-
-    @media all and (max-width: 1024px) {
-
-      .video-carousel {
-        height: 40%;
-        }
-      .btns {
-        top: 30%;
-        height: 40%; 
-      }
-       h1 {
-      font-size: 14px;
-      top: 30%;
-      }
-      .home-header {
-        font-size: 18px;
-        top: 32%;
-      }
-    }
-    @media all and (max-width: 768px) {
-      .btns {
-        top: 25%;
-      }
-    }
-
-    @media all and (max-width: 576px) {
-      .btns {
-        top: 25%;
-        height: 30%;
-      }
-      h1 {
-      font-size: 8px;
-      top: 20%;
-      }
-      .home-header {
-        font-size: 14px;
-        top: 27%;
-      }
-     .aboutCoffee {
-    flex-direction: column;
-    }
-
-    .textBoxTwo {
-      font-size: 24px;
-      width: 70%;
-     
-      }
-    .fresh {
-      font-size: 16px;
-      width: 80%;
-    }
-
-    .everyMonth {
-     margin-top: -6px;
-    }
-
-    .interior {
-      width: 100%;
-      
-    }
-
-    .box {
-      margin-top: 30px;
-    }
-
-    }
+  }
+  @media all and (max-width: 1024px) {
+  .video-carousel {
+  height: 40%;
+  }
+  .btns {
+  top: 30%;
+  height: 40%; 
+  }
+  h1 {
+  font-size: 14px;
+  top: 30%;
+  }
+  .home-header {
+  font-size: 18px;
+  top: 32%;
+  }
+  }
+  @media all and (max-width: 768px) {
+  .btns {
+  top: 25%;
+  }
+  }
+  @media all and (max-width: 576px) {
+  .btns {
+  top: 25%;
+  height: 30%;
+  }
+  h1 {
+  font-size: 8px;
+  top: 20%;
+  }
+  .home-header {
+  font-size: 14px;
+  top: 27%;
+  }
+  .box {
+  margin-top: 30px;
+  }
+  }

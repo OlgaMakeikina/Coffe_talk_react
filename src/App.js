@@ -10,12 +10,12 @@ import Menu from './MenuComponent/Menu';
 import Team from './TeamComponent/Team';
 import Contact from './ContactsComponent/Contact';
 import './App.css';
-import Nav from './Navbar';
-import Footer from './Footer';
+import Nav from './AppComponents/Navbar';
+import Footer from './AppComponents/Footer';
 import Gallery from './GalleryComponent/Gallery';
-import ScrollToTopButton from './Scroll'
-import CartButton from './CartButton';
-import About from './About';
+import ScrollToTopButton from './AppComponents/Scroll'
+import CartButton from './AppComponents/CartButton';
+import About from './AboutComponent/About';
 
 function App() {
   return (
