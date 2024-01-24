@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { slider } from "./slider";
 
-
 function HomeItem() {
   const [slide, setSlide] = useState(0);
   const [hidden, setHidden] = useState(false);
@@ -47,7 +46,7 @@ function HomeItem() {
         }))
         setHidden(false);
       }, 1000); 
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(intervalId);
   }, []);

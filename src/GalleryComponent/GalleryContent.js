@@ -7,7 +7,7 @@ function GalleryContent ({onCardClick}) {
 
   return (
     <main className="content">
-<h2>PHOTO GALLERY</h2>
+<h2 className='header'>PHOTO GALLERY</h2>
       <section className="gallery">
         <ul className="gallery__list">
           {cardList.map((item, ind) => (

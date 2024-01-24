@@ -12,7 +12,7 @@ return (
 
 <div>
   <div className="cont">
-    <h2>OUR MENU</h2>
+    <h2 className='header'>OUR MENU</h2>
   </div>
   <Buttons 
   items={items}

@@ -7,7 +7,6 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = () => {
-    // При клике на рубрику закрываем меню
     setIsOpen(false);
   };
 
@@ -26,6 +25,7 @@ function Nav() {
           </p>
         </div>
         <Link to="/" className='link' onClick={handleLinkClick}>Home</Link>
+        <Link to="/about" className='link' onClick={handleLinkClick}>About</Link>
         <Link to="/menu" className='link' onClick={handleLinkClick}>Menu</Link>
         <Link to="/gallery" className='link' onClick={handleLinkClick}>Gallery</Link>
         <Link to="/Team" className='link' onClick={handleLinkClick}>Team</Link>

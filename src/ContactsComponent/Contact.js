@@ -5,7 +5,7 @@ import './contact.css';
 function Contact() {
 return (
 <div>
-   <h2>CONTACTS</h2>
+   <h2 className="header">CONTACTS</h2>
    <div className="contacts-footer">
       <Footer />
       <ObjectMap />
