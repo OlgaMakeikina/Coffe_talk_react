@@ -10,6 +10,7 @@ function Goods({ goods }) {
   const [totalPrice, setTotalPrice] = useState(0);
   const [showAlert, setShowAlert] = useState(false);
   const [selectedProductForAlert, setSelectedProductForAlert] = useState(null);
+  const [cartVisible, setCartVisible] = useState(false); 
 
   useEffect(() => {
     const items = cart.reduce((acc, item) => acc + item.quantity, 0);
@@ -21,9 +22,9 @@ function Goods({ goods }) {
   const putInCart = (id) => {
     const selectedProduct = goods.find((product) => product.id === id);
     const isInCart = cart.some((item) => item.id === id);
-
     if (!isInCart) {
       setCart([...cart, { ...selectedProduct, quantity: 1 }]);
+      setCartVisible(true); // Show the cart when a product is added
     } else {
       setShowAlert(true);
       setSelectedProductForAlert(selectedProduct);
@@ -44,10 +45,24 @@ function Goods({ goods }) {
     setCart(updatedCart);
   };
 
+  const removeFromCart = (id) => {
+    const updatedCart = cart.filter((item) => item.id !== id);
+    setCart(updatedCart);
+  };
+
   return (
               <div>
                 {showAlert && <SweetAlert selectedProduct={selectedProductForAlert} setShowAlert={setShowAlert} />}
-                <ShoppingCart cart={cart} totalItems={totalItems} totalPrice={totalPrice} />
+                {cartVisible && (
+        <ShoppingCart
+          cart={cart}
+          totalItems={totalItems}
+          totalPrice={totalPrice}
+          addMore={addMore}
+          reduceItem={reduceItem}
+          removeFromCart={removeFromCart}
+        />
+      )}
           
                 <div className="products">
                   {goods.map((element) => (
@@ -55,8 +70,6 @@ function Goods({ goods }) {
                       key={element.id}
                       {...element}
                       putInCart={putInCart}
-                      reduceItem={reduceItem}
-                      addMore={addMore}
                     />
                   ))}
                 </div>

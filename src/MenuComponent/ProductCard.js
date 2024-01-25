@@ -1,4 +1,4 @@
-function ProductCard({ id, name, price, image, putInCart, reduceItem, addMore, viewCart }) {
+function ProductCard({ id, name, price, image, putInCart, viewCart }) {
     
         return (
           <div key={id} className="product-card">
@@ -12,8 +12,6 @@ function ProductCard({ id, name, price, image, putInCart, reduceItem, addMore, v
             <div className="product-info">
               <h3>{name}</h3>
               <h4>$ {price.toFixed(2)}</h4>
-              <button onClick={() => reduceItem(id)}>&laquo;</button>
-              <button onClick={() => addMore(id)}>&raquo;</button>
             </div>
           </div>
         );

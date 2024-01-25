@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import scroll from './Content/scroll.png'
+import scroll from './AppContent/scroll.png'
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -10,7 +10,7 @@ const [goods, setGoods] = useState(items);
 
 return (
 
-<div>
+  <div>
   <div className="cont">
     <h2 className='header'>OUR MENU</h2>
   </div>
@@ -21,7 +21,7 @@ return (
 <Goods goods={goods}/>
 </div>
 
-)
- }
+  );
+}
 
 export default Menu;

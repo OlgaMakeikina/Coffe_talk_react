@@ -48,7 +48,7 @@ image: latte
 
     {
         id: 5,
-        name: "Ice Coffe",
+        name: "Ice Coffee",
         searchTerm: ["coffee", "ice"],
         price: 5.50,
         image: iceCoffe

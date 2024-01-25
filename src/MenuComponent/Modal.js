@@ -1,5 +1,4 @@
 
-
 const Modal = ( {setIsOpen, children} ) => {
 
     const closeModal = e => {
