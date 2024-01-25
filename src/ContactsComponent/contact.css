@@ -74,3 +74,14 @@ form {
     font-size: 20px;
     }
     }
+
+
+    @media all and (max-width: 576px) {
+        #email, #message {
+            width: 200px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }

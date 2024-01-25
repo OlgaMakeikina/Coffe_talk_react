@@ -46,7 +46,7 @@ beforeChange: (current, next) => setPerson(next),
 
 return (
 <div className="Team">
-   <h2>MEET THE TEAM</h2>
+   <h2 className="header">MEET THE TEAM</h2>
    <Slider {...settings}>
       {data.map((item) => (
       <div key={item.id} className={item.id === person ? "slide activeSlide" : "slide"}>

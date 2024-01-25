@@ -174,5 +174,8 @@
 
   
   }
-
-
+  @media (width: 540px) {
+    .popup__container {
+      margin: 10%;
+  }
+  }
