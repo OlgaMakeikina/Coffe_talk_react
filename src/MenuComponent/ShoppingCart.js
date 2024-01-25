@@ -6,12 +6,30 @@ import Modal from './Modal';
 
 function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, removeFromCart }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [emptyCartMessage, setEmptyCartMessage] = useState('');
+
+  const handleBuyClick = () => {
+    if (cart.length === 0) {
+      setEmptyCartMessage(
+        <p style={{ color: '#38470B', fontWeight: 'bold' }}>
+          Please add items before purchasing.
+        </p>
+      );
+      setTimeout(() => {
+        setEmptyCartMessage('');
+      }, 5000);
+    } else {
+      setIsOpen(true);
+      setEmptyCartMessage('');
+    }
+  };
+
 
   return (
     <div className="cart">
       <h2 className="header">Shopping Cart</h2>
       {cart.length === 0 ? (
-        <p className="cart-empty">Your cart is empty. Please, add item to cart.</p>
+        <p className="cart-empty">Your cart is empty.</p>
       ) : (
         <ul>
           <li className="title-li">
@@ -49,14 +67,16 @@ function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, remov
           </li>
         </ul>
       )}
-      <button className="buy-btn" onClick={() => setIsOpen(true)}>
+      <button className="buy-btn" onClick={handleBuyClick}>
         Buy
       </button>
+      {emptyCartMessage && <p className="empty-cart-message">{emptyCartMessage}</p>}
       {isOpen && 
         <Modal setIsOpen={setIsOpen}>
           <ModalContent setIsOpen={setIsOpen}/>
         </Modal>
       }
+
       <button className="closeCartButton" onClick={() => setIsOpen(false)}>
         <img  src={closeCart} width="25px" alt="close"/>
       </button>
