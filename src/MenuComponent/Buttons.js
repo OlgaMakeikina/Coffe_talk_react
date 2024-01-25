@@ -1,10 +1,4 @@
-import ModalContent from "./ModalContent";
-import Modal from './Modal';
-import { useState } from "react";
-import cart from './MenuContent/cart.png';
-
-function Buttons({items, setGoods, totalItems}) {
-    const [isOpen, setIsOpen] = useState(false);
+function Buttons({items, setGoods}) {
 
     const filteredGoods = searchTerm => {
     const filteredResult = [];
@@ -26,21 +20,7 @@ function Buttons({items, setGoods, totalItems}) {
     <button className="change" onClick= {() => filteredGoods ("bakery")}>Bakery</button>
     <button className="change" onClick={() => filteredGoods("ice")}>Ice drinks</button>
     <button className="change" onClick ={() => filteredGoods("other")}>Other</button>
-    <div>
-    <button className="cart-btn" onClick = { () => setIsOpen(true)}>
-    <div className="cart-cont">
-    <img className="cart-image" src={cart} alt="cart" width="30px" />
-    {totalItems > 0 && <span className="quantity">{totalItems}</span>}
-  </div>
-        
-        </button>
-      {
-        isOpen && 
-        <Modal setIsOpen={setIsOpen}>
-          <ModalContent setIsOpen={setIsOpen}/>
-        </Modal>
-}
-      </div>
+    
     </div>   
         )
     }
