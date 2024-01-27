@@ -1,8 +1,9 @@
 import deleteItem from './MenuContent/delete.png';
 import closeCart from './MenuContent/cancel.png';
 import { useState } from 'react';
-import ModalContent from './ModalContent';
-import Modal from './Modal';
+import ModalContent from './ModalComponent/ModalContent';
+import Modal from './ModalComponent/Modal';
+import './shoppingCart.css'
 
 function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, removeFromCart, resetCart }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, remov
         <ul>
           <li className="title-li">
             <div className="product-title">
-              <p className="product-name">Name of Product</p>
+              <p className="product-name">Product</p>
               <div className="product-quantity"><p>Quantity</p></div>
               <div className="product-price"><p>Price</p></div>
             </div>
