@@ -24,7 +24,7 @@ function Goods({ goods }) {
     const isInCart = cart.some((item) => item.id === id);
     if (!isInCart) {
       setCart([...cart, { ...selectedProduct, quantity: 1 }]);
-      setCartVisible(true); // Show the cart when a product is added
+      setCartVisible(true); 
     } else {
       setShowAlert(true);
       setSelectedProductForAlert(selectedProduct);
@@ -50,6 +50,18 @@ function Goods({ goods }) {
     setCart(updatedCart);
   };
 
+  const resetCart = () => {
+    setCart([]);
+    setCartVisible(false); 
+  };
+
+  const scrollToCart = () => {
+    const cartElement = document.getElementById('myCart');
+    if (cartElement) {
+      cartElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
               <div>
                 {showAlert && <SweetAlert selectedProduct={selectedProductForAlert} setShowAlert={setShowAlert} />}
@@ -61,6 +73,7 @@ function Goods({ goods }) {
           addMore={addMore}
           reduceItem={reduceItem}
           removeFromCart={removeFromCart}
+          resetCart={resetCart}
         />
       )}
           
@@ -69,7 +82,8 @@ function Goods({ goods }) {
                     <ProductCard
                       key={element.id}
                       {...element}
-                      putInCart={putInCart}
+                      putInCart={putInCart} 
+                      scrollToCart={scrollToCart}
                     />
                   ))}
                 </div>

@@ -1,13 +1,12 @@
-function ProductCard({ id, name, price, image, putInCart, viewCart }) {
-    
+function ProductCard({ id, name, price, image, putInCart, scrollToCart }) {
+
+
         return (
           <div key={id} className="product-card">
             <img className="product-img" src={image} alt="products" />
             <div className="overlay-btn">
-              <button className="btn" onClick={() => putInCart(id)}>
-                Add to cart
-              </button>
-              <button className="view-btn" onClick={viewCart}>View cart</button>
+              <button className="btn" onClick={() => putInCart(id)}>Add to cart</button>
+              <button className="view-btn" onClick={scrollToCart}>View cart</button>
             </div>
             <div className="product-info">
               <h3>{name}</h3>

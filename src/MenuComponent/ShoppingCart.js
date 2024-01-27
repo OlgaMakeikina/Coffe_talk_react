@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ModalContent from './ModalContent';
 import Modal from './Modal';
 
-function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, removeFromCart }) {
+function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, removeFromCart, resetCart }) {
   const [isOpen, setIsOpen] = useState(false);
   const [emptyCartMessage, setEmptyCartMessage] = useState('');
 
@@ -26,7 +26,7 @@ function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, remov
 
 
   return (
-    <div className="cart">
+    <div id="myCart" className="cart">
       <h2 className="header">Shopping Cart</h2>
       {cart.length === 0 ? (
         <p className="cart-empty">Your cart is empty.</p>
@@ -77,11 +77,13 @@ function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, remov
         </Modal>
       }
 
-      <button className="closeCartButton" onClick={() => setIsOpen(false)}>
-        <img  src={closeCart} width="25px" alt="close"/>
+      <button className="closeCartButton" onClick={() => {
+        setIsOpen(false);
+        resetCart();
+      }}>
+        <img src={closeCart} width="25px" alt="close"/>
       </button>
     </div>
-  );
-}
+  )}
 
 export default ShoppingCart;
