@@ -79,24 +79,10 @@ body {
   transition: right 0.6s ease-in-out; 
   z-index: 9;
   }
-  .cart-button {
-  position: fixed;
-  bottom: 65px;
-  right: -60px;
-  cursor: pointer;
-  transition: right 0.6s ease-in-out; 
-  z-index: 9;
-  border: none;
-  background: linear-gradient(#efdc5e,#FF9843); 
-  }
   .scroll-to-top.visible {
     right: 20px; 
   }
-  .cart-button.visible {
-  right: 10px; 
-  }
-  .scroll-to-top.hidden,
-  .cart-button.hidden {
+  .scroll-to-top.hidden {
   right: -60px; 
   }
 

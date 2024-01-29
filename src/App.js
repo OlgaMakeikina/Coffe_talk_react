@@ -14,7 +14,6 @@ import Nav from './AppComponents/Navbar';
 import Footer from './AppComponents/Footer';
 import Gallery from './GalleryComponent/Gallery';
 import ScrollToTopButton from './AppComponents/Scroll'
-import CartButton from './AppComponents/CartButton';
 import About from './AboutComponent/About';
 
 function App() {
@@ -69,7 +68,6 @@ function AppContent() {
 
       <Footer footerStyle={footerStyle} />
       <ScrollToTopButton />
-      <CartButton />
     </div>
   );
 }
