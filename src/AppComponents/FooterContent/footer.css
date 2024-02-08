@@ -1,0 +1,32 @@
+
+.footer {
+    width: 80%; 
+    margin-top: 100px;
+    background-color: #38470B;
+    height: 3px;
+    border: none;
+    }
+    .footer-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .foot {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-left: 10px;
+    }
+    .cont {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif;
+    color: #38470B;
+    }
+    .text {
+    color: #38470B;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    }

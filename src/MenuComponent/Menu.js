@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Goods from './Goods';
-import Buttons from './Buttons';
+import Buttons from './Buttons/Buttons';
 import { items } from './items';
 import './menu.css';
 

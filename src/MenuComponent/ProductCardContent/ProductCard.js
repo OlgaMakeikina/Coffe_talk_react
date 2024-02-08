@@ -1,3 +1,5 @@
+import './product.css'
+
 function ProductCard({ id, name, price, image, putInCart, scrollToCart }) {
 
 

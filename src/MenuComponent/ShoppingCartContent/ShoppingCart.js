@@ -1,8 +1,8 @@
-import deleteItem from './MenuContent/delete.png';
-import closeCart from './MenuContent/cancel.png';
+import deleteItem from './delete.png';
+import closeCart from './cancel.png';
 import { useState } from 'react';
-import ModalContent from './ModalComponent/ModalContent';
-import Modal from './ModalComponent/Modal';
+import ModalContent from '../ModalComponent/ModalContent';
+import Modal from '../ModalComponent/Modal';
 import './shoppingCart.css'
 
 function ShoppingCart({ cart, totalItems, totalPrice, reduceItem, addMore, removeFromCart, resetCart }) {

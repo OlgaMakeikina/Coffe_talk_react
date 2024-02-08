@@ -5,111 +5,6 @@
   justify-content: space-around;
 }
 
-.product-card {
-  margin: 30px;
-  background-color: #A0855B;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
-
-.product-img {
-  width: 400px;
-  height: 500px;
-}
-
-.overlay-btn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.product-card:hover .overlay-btn {
-  opacity: 1;
-}
-
-.overlay-btn .btn {
-  transform: translateY(-100%); 
-  transition: transform 0.3s ease-in-out;
-  opacity: 0;
-}
-
-.product-card:hover .overlay-btn .btn  {
-  transform: translateY(0); 
-  opacity: 1;
-}
-
-.btn {
-  padding: 20px;
-  background-color: #FF9843;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #ffffff; 
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #38470B;
-}
-
-.view-btn {
-  padding: 20px;
-  background-color: transparent;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #ffffff; 
-  border: none;
-  cursor: pointer;
-}
-
-.view-btn:hover {
-color: #FF9843;
-}
-  h3 {
-   font-family: 'Inter', sans-serif;
-   color: #f4eddd;
-   text-align: center;
-   text-transform: uppercase;
-  }
-
-  h4 {
-    font-family: 'Inter', sans-serif;
-    color: #38470B;
-    text-align: center;
-  }
-
-  .product-info {
-   margin-left: 15px;
-  }
-
-  .cont {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .change {
-    background-color: #38470B;
-    color: #f4eddd;
-    padding: 10px;
-    font-size: 14px;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    cursor: pointer;
-    width: 100px;
-  }
-
   .cart-cont {
     display: flex;
     flex-direction: row;
@@ -135,15 +30,6 @@ color: #FF9843;
     margin-right: 6px;
   }
 
-  button {
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  .change:hover {
-    transform: scale(1.1);
-    background-color: #FF9843; 
-  }
   
 .custom-button {
   color: #f4eddd;
@@ -165,20 +51,3 @@ color: #FF9843;
   font-style: normal;
 }
 
-
-@media all and (max-width: 1024px) {
-
-  .product-img {
-    width: 300px;
-    height: 400px;
-  }
-  
-}
-
-
-@media all and (max-width: 280px) {
-  .product-img {
-    width: 200px;
-    height: 280px;
-  }
-}

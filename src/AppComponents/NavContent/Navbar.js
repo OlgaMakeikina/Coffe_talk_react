@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import logo from './AppContent/logo.png';
+import logo from './logo.png';
 import { useState } from "react";
-import '../App.css';
+import './navbar.css';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ function Nav() {
         <Link to="/about" className='link' onClick={handleLinkClick}>About</Link>
         <Link to="/menu" className='link' onClick={handleLinkClick}>Menu</Link>
         <Link to="/gallery" className='link' onClick={handleLinkClick}>Gallery</Link>
-        <Link to="/Team" className='link' onClick={handleLinkClick}>Team</Link>
+        <Link to="/team" className='link' onClick={handleLinkClick}>Team</Link>
         <Link to="/contact" className='link' onClick={handleLinkClick}>Contacts</Link>
       </nav>
       <button className="header-menu-btn" onClick={toggleMenu}>

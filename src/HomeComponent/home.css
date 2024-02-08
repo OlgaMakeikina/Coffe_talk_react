@@ -1,17 +1,23 @@
-h1 {
+.main-header {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  color: #F9F6F2;
+  font-family: 'Inter', sans-serif;
   }
   .home-header {
   position: absolute;
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 2;  
+  font-style: italic;
+  font-family: 'Inter', sans-serif;
+  color: #F9F6F2;
   }
+
   .video-carousel {
   position: absolute;
   width: 100%;
@@ -59,8 +65,8 @@ h1 {
   top: 30%;
   height: 40%; 
   }
-  h1 {
-  font-size: 14px;
+  .main-header  {
+  font-size: 24px;
   top: 25%;
   }
   .home-header {
@@ -74,7 +80,7 @@ h1 {
    .video-carousel {
       height: 100%;
     }
-    h1 {
+    .main-header  {
       top: 50%;
       }
       .home-header {
@@ -87,7 +93,7 @@ h1 {
   }
 
   @media all and (max-width: 768px) {
-    h1 {
+    .main-header  {
       top: 25%;
       }
       .home-header {
@@ -103,8 +109,8 @@ h1 {
   top: 25%;
   height: 30%;
   }
-  h1 {
-  font-size: 8px;
+  .main-header  {
+  font-size: 24px;
   top: 20%;
   }
   .home-header {
@@ -117,7 +123,7 @@ h1 {
   }
 
   @media all and (max-width: 400px) {
-    h1 {
+    .main-header  {
       top: 30%;
       }
       .home-header {

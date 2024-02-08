@@ -1,0 +1,27 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .change {
+    background-color: #38470B;
+    color: #f4eddd;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  
+  button {
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .change:hover {
+    transform: scale(1.1);
+    background-color: #FF9843; 
+  }

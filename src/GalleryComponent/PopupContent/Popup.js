@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './popup.css'
 
 function Popup (props) {
   const {card, onClose, prevCard, nextCard} = props

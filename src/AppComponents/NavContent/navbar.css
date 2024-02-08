@@ -1,0 +1,71 @@
+.name {
+    color: rgba(145, 91, 74, 1);
+    font-size: 30px;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    }
+    .talks {
+    color: #38470B;
+    }
+    .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    }
+    .link {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #38470B;
+    font-size: 24px;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    }
+    .logo {
+    display: flex;
+    margin-right: auto;
+    }
+  
+    
+    .header-menu-btn {
+    display: none;
+    }
+
+    @media all and (max-width: 768px) {
+        .header-nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: -290px;
+        width: 250px;
+        height: 100%;
+        background-color: #F9F6F2;;
+        border: 1px solid #38470B;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        transition: transform 0.7s ease;
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
+        justify-content: flex-start;
+        z-index: 100;
+        }
+        .header-nav.active {
+        transform: translateX(100%);
+        }
+        .link {
+        margin-left: 50px;
+        margin-top: 30px;
+        color: #38470B;
+        }
+        .header-menu-btn {
+        display: block;
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        border: none;
+        background-color: transparent;
+        color: #38470B;
+        }
+      
+        }

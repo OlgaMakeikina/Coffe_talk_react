@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './menu.css';
 import SweetAlert from "./SweetAlert";
-import ShoppingCart from "./ShoppingCart";
-import ProductCard from "./ProductCard";
+import ShoppingCart from "./ShoppingCartContent/ShoppingCart";
+import ProductCard from "./ProductCardContent/ProductCard";
 
 function Goods({ goods }) {
   const [cart, setCart] = useState([]);

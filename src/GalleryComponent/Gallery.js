@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import GalleryContent from './GalleryContent'
-import Popup from './Popup'
+import Popup from './PopupContent/Popup'
 import {cardList} from './CardList';
 
 

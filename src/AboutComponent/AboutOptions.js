@@ -1,16 +1,14 @@
-import imageOne from './AboutContent/5.png';
-import imageTwo from './AboutContent/6.png';
-import imageThree from './AboutContent/7.png';
-import imageFour from './AboutContent/8.png';
+
 import { gsap } from 'gsap';
 import './about.css';
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { dataAbout } from './dataAbout'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutOptions = () => {
+ 
   const container = useRef();
 
   useEffect(() => {
@@ -36,34 +34,17 @@ const AboutOptions = () => {
 
 
     return ( 
-    <div className="container" ref={container}>
-    <div className="box">
-       <img src={imageOne} width="80px" alt="coffee"/>
-       <p className="one">VISIT US</p>
-       <p className="two">find our cafe</p>
-       <p className="three">We purchase the best coffee beans all over the world</p>
+      <div className="container" ref={container}>
+      {dataAbout.map(item => (
+        <div className="box" key={item.id}>
+          <img src={item.image} width="80px" alt="icon" />
+          <p className="one">{item.textOne}</p>
+          <p className="two">{item.textTwo}</p>
+          <p className="three">{item.textThree}</p>
+        </div>
+      ))}
     </div>
-    <div className="box">
-       <img src={imageTwo} width="80px" alt="coffee"/>
-       <p className="one">TAKEAWAY</p>
-       <p className="two">taste coffee every day</p>
-       <p className="three">Take coffee with you on the road</p>
-    </div>
-    <div className="box">
-       <img src={imageThree} width="80px" alt="coffee"/>
-       <p className="one">MASTERCLASSES</p>
-       <p className="two">book a class</p>
-       <p className="three">Events take place throughout the day without a break</p>
-    </div>
-    <div className="box">
-       <img src={imageFour} width="80px" alt="coffee"/>
-       <p className="one">BREWING</p>
-       <p className="two">view the recipes</p>
-       <p className="three">A brewed drink prepared from roasted beans is coffee</p>
-    </div>
-
- 
-</div>  
-    )
+  );
 }
+
 export default AboutOptions;

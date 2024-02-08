@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import Footer from "../AppComponents/Footer";
+import Footer from "../AppComponents/FooterContent/Footer";
 import ObjectMap from "./ObjectMap";
 import './contact.css';
 function Contact() {

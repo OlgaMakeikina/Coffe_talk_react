@@ -1,3 +1,5 @@
+import './buttons.css'
+
 function Buttons({items, setGoods}) {
 
     const filteredGoods = searchTerm => {
