@@ -21,6 +21,6 @@ npm run build
 - Enter your email and type a message in the window and click send message
 
 ## Technologies
-- JavaScript
+- React
 - HTML/CSS
 - GSAP
