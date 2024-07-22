@@ -13,6 +13,8 @@ npm start
 npm run build
 
 ## Structure
+![Описание изображения](src/screen.png)
+
 ## Usage
 - Click on the Team button in the navbar to find out information about the cafe employees.
 - Click on the Menu button to view the cafe menu.
