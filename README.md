@@ -2,9 +2,9 @@
 The website for cafe created on the basis of FIGMA for a cafe. The site is designed to introduce you to the cafe, its menu, team and contacts.
 
 ## Installation
-git clone https://github.com/OlgaMakeikina/Coffe_talk_react.git
-cd repository
-npm install
+- git clone https://github.com/OlgaMakeikina/Coffe_talk_react.git
+- cd repository
+- npm install
 
 ## Running
 npm start
